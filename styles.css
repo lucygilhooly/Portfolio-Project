@@ -4,14 +4,37 @@
 }
 
 header {
-list-style: none;
+list-style-type: none;
+padding: 40px;
 }
 
-#contact{
+.name {
+    float: left;
+    font-size: 30px;
+}
+
+.about {
+    float: right;
+
+}
+
+p {
+    max-width: 50%;
+}
+.contact{
 border:5px,solid,white;
 border-radius: 8px;
 }
 
 img {
     max-width: 400px;
+}
+
+.list{
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
 }
