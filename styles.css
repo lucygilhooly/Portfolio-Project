@@ -1,7 +1,7 @@
 * {
     background-color: rgb(113, 109, 109);
     color: whitesmoke;
-    font-family: sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -21,6 +21,12 @@ padding: 40px;
 
 p {
     max-width: 50%;
+}
+
+.card {
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
 }
 .contact{
     border-style: solid;
@@ -42,4 +48,8 @@ img {
 footer {
     text-align: center;
     padding: 50px;
+}
+
+#get-in-touch {
+    font-size: 50px;
 }
