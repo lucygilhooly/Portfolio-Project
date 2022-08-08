@@ -2,3 +2,16 @@
     background-color: darkgrey;
     color: whitesmoke;
 }
+
+header {
+list-style: none;
+}
+
+#contact{
+border:5px,solid,white;
+border-radius: 8px;
+}
+
+img {
+    max-width: 400px;
+}
