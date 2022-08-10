@@ -1,33 +1,72 @@
 * {
-    background-color: rgb(113, 109, 109);
+    background-color: rgb(67, 60, 60);
     color: whitesmoke;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
-list-style-type: none;
-padding: 40px;
+.flex-container {
+font-size: 20px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+text-decoration:none;
 }
 
 .name {
-    float: left;
-    font-size: 30px;
+    justify-content: flex-start;
 }
 
-.about {
-    float: right;
+.links{
+    justify-content:flex-end;
+    width: 35%;
+    
+}
 
+a:hover {
+    color: rgb(67, 60,60);
+    background-color: blanchedalmond;
+}
+
+.nav {
+    padding: 20px;
+    text-decoration:none;
+}
+
+#opening {
+    padding-bottom: 30px;
 }
 
 p {
     max-width: 50%;
 }
-
+.flex-container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
 .card {
     border-style: solid;
     border-color: whitesmoke;
-    border-width: 1px;
+    border-width: 2px;
+    padding: 5px;
 }
+
+.flex-container3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe {
+    justify-content: flex-start;
+}
+
+ .pictureOfMe {
+   max-width: 25%;
+   justify-content: flex-end;
+}
+
+
 .contact{
     border-style: solid;
     border-width: 2px;
@@ -36,13 +75,12 @@ p {
     padding: 5px;
 }
 
-img {
-    max-width: 400px;
-    float: right;
-}
+
 
 .list{
     list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer {

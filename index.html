@@ -7,62 +7,101 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <ul class="list">
-            <li id="name">LUCY GILHOOLY</li>
-            <li class="about">About</li>
-            <li class="about">Portfolio</li>
-            <li class="about">Contact</li>
-        </ul>
+    <header class="heading">
+        <div class="heading__name">
+            <h1>LUCY <span style="color:blanchedalmond">GILHOOLY.</span></h1>
+        </div>
+        
+        <div class="heading__links">
+        <a class="heading__links--nav" href="#"> About </a>
+        <a class="heading__links--nav"href="#"> Portfolio </a>
+        <a class="heading__links--nav" href="#"> Contact </a>
+        </div>
+      
     </header>
 
     <main>
        <div id="opening">
-          <h1>Junior Software Developer</h1>
+          <h1>Junior Software Developer.</h1>
           <p> Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. Diam, elementum morbi pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque mollis tempor.</p>
        </div>
-       <div>
-          <h2> PORTFOLIO ↴</h2>
-          <a class="card">Project 1</a>
-          <a class="card">Project 2</a>
-          <a class="card">Project 3</a>
-          <a class="card">Project 4</a>
-          <a class="card">Project 5</a>
-          <a class="card">Project 6</a>
-       </div>
+       
+       <div><h2 > PORTFOLIO ↴</h2></div>
+       <div class="Portfolio">
+          
+          <a href= # class="Portfolio__card">Project 1 <img src="images/images.jpg" alt="code image" ></a>
+          <a href= # class="Portfolio__card">Project 2 <img src="images/images.jpg" alt="code image" ></a>
+          <a href= # class="Portfolio__card">Project 3 <img src="images/images.jpg" alt="code image" ></a>
+          <a href= # class="Portfolio__card">Project 4 <img src="images/images.jpg" alt="code image"></a>
+          <a href= # class="Portfolio__card">Project 5 <img src="images/images.jpg" alt="code image"></a>
+          <a href= # class="Portfolio__card">Project 6 <img src="images/images.jpg" alt="code image" ></a>
 
-       <div>
-         <h3>ABOUT</h3>
-         <p>Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus,ultrices aliquet. Velit, tnicidunt sed sed proin pellentesque dictum pulvinae. Arcu diam massa elementum tempor lectus. aliquam lacus lacus diam eget quisque purus etiam mi, curabitur. imperdiet sed felis ipsum, porttitor ipsum faucibus neque cursus. Quis blandit quisque sed diam at tellus sagittis.
-
-            Urna, vel nibh lectus condimentum. Purus pellentesque scelerisque tristique in vestibulum augue accumsan. Eu morbi porttitor dolor ipsum dui ultrices viverra nisi, leo. Erat porta risus, id enim adipiscing sit amet at. Tortor, posuere pulvinar volutpat magnis felis suspendisse ut. Ticidunt in pulvinar suspendisse lectus enim, tortor mattis ut. Integer auctor aliquet tincidunt rhoncus at.
-         </p>
-         <img src="./images/smiley-face-history-0.jpg" alt="smiley face">
        </div>
- 
-       <div>
-          <h4 class="last-title"> Experience </h4>
-          <h5> Trainee Software Developer @ Nology</h5>
-          <p>Aug - Nov 2022</p>
+        
+       <div><h3>ABOUT</h3></div>
+       
+        <section class="About">
+         
+            <div class="About__me">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet placerat nunc vel efficitur. Etiam cursus nulla ut enim iaculis, eu tristique nulla rutrum. Donec dapibus lacus dui, eget tincidunt massa posuere at. Ut nisi mi, congue a tristique vitae, blandit quis massa. Phasellus augue est, consectetur sit amet nisl ac, consectetur aliquam dui. Nullam euismod viverra lobortis. Praesent vitae elit in nunc blandit maximus at eget urna. Vivamus suscipit augue neque, et pellentesque erat malesuada sit amet. Integer convallis, massa eu tristique feugiat, felis urna posuere orci, vel blandit felis velit et magna. Sed mattis justo eget turpis venenatis tristique.
+
+
+                </p>
+            </div>
+
+            <div class="About__image">
+            <img src="./images/istockphoto-1279104620-612x612.jpg" alt="smiley face">
+            </div>
+       </section>
+
+       <section class="experienceCard">
+
+            <h4> Experience </h4>
+         <div class="experienceCard__1">
+            <h5> Trainee Software Developer @ Nology</h5>
+            <p>Aug - Nov 2022</p>
           <ul>
               <li>Sed condimentum vitae sed sit congue massa tortor volupat nascetur.</li>
               <li>Felis vellit, pretium tristique elementum neque, congueelit integer. Et tortor imperdiet aenaen nulla pulvinar mauris mattis.</li>
           </ul>
-          <h5>Covid Tester @ Stefs Star Nurses</h5>
-          <h5>Sales Associate @ Dr Martens </h5>
-
-          <h4 class="last-title">Interests </h4>
-          <ul class="list">
-              <li>Gym</li>
-              <li>Cooking</li>
-              <li>Skiing</li>
-          </ul>
         </div>
+
+       <div class="experienceCard__2">
+          <h5>Covid Tester @ Stefs Star Nurses</h5>
+        </div>
+
+        <div class="experienceCard__3">
+          <h5>Sales Associate @ Dr Martens </h5>
+        </div>
+
+       </section>
+
+       <section class="cardCommander">
+
+            <div class="interestsCard">
+
+                <h4 >Interests </h4>
+
+                <ul class="interestsCard__list">
+                    <li>Gym</li>
+                    <li>Cooking</li>
+                    <li>Skiing</li>
+                </ul>
+
+            </div>
+
+      </section>
+
+        <section>
+            <h1 id="get-in-touch">Get in Touch</h1>
+            <button class="contact"> contact </button> 
+        </section>
     </main>
 
     <footer>
-        <h1>Get in Touch</h1>
-        <a class="contact"> contact </a> 
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">CV</a>
     </footer>
 
 </body>

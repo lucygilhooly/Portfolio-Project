@@ -1,0 +1,92 @@
+* {
+  background-color: #433c3c;
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.heading {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.heading__name {
+  justify-content: flex-start;
+}
+.heading__links {
+  justify-content: flex-end;
+  width: 35%;
+}
+.heading__links--nav {
+  padding: 20px;
+  text-decoration: none;
+}
+.heading__links a:hover {
+  color: #433c3c;
+  background-color: blanchedalmond;
+}
+
+#opening {
+  padding-bottom: 30px;
+}
+#opening__p {
+  max-width: 50%;
+}
+
+.Portfolio {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  background-color: blanchedalmond;
+  margin: 50px;
+}
+.Portfolio__card {
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 2px;
+  padding: 5px;
+  text-align: center;
+}
+
+.About {
+  display: flex;
+  justify-content: space-around;
+}
+.About__image {
+  width: 50px;
+}
+
+.experienceCard {
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
+}
+.cardCommander {
+  border: 2px solid red;
+}
+
+.interestsCard {
+  width: 50%;
+}
+.interestsCard__list {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#get-in-touch {
+  font-size: 50px;
+}
+
+.contact {
+  border-style: solid;
+  border-width: 2px;
+  border-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+}
