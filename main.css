@@ -1,92 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
 * {
-  background-color: #433c3c;
-  color: whitesmoke;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #afafe9;
+  color: #2b2b95;
+  font-family: "Abril Fatface";
 }
 
 .heading {
-  font-size: 20px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .heading__name {
   justify-content: flex-start;
+  font-size: 30px;
+  align-items: center;
 }
 .heading__links {
   justify-content: flex-end;
+  align-items: center;
+  margin-top: 1.8rem;
   width: 35%;
+  font-size: 1.5rem;
 }
 .heading__links--nav {
-  padding: 20px;
+  padding: 1.25rem;
   text-decoration: none;
 }
 .heading__links a:hover {
-  color: #433c3c;
-  background-color: blanchedalmond;
+  color: whitesmoke;
+  background-color: #9d649d;
+  border-radius: 1.5rem;
 }
 
-#opening {
-  padding-bottom: 30px;
+.start {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-#opening__p {
+.start__opening {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  width: 50%;
+  font-size: 1.25rem;
+}
+.start__opening__p {
   max-width: 50%;
+  font: "Domine";
+}
+.start__me--img {
+  max-width: 40vw;
+  border-radius: 1.25rem;
 }
 
-.Portfolio {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 50px;
-  background-color: blanchedalmond;
-  margin: 50px;
-}
-.Portfolio__card {
-  border-style: solid;
-  border-color: whitesmoke;
-  border-width: 2px;
-  padding: 5px;
-  text-align: center;
-}
-
-.About {
+.skills {
   display: flex;
   justify-content: space-around;
 }
-.About__image {
-  width: 50px;
+
+.Portfolio {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.25rem;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+.Portfolio button {
+  border-radius: 1.25rem;
+}
+.Portfolio button:active {
+  background-color: #9d649d;
+  color: whitesmoke;
+}
+.Portfolio__card {
+  border: 2px solid #9d649d;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.25rem;
+  box-shadow: 5px 10px #9d649d;
+  font-weight: bold;
 }
 
-.experienceCard {
-  border-style: solid;
-  border-color: red;
-  border-width: 2px;
+#About {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+#About__title {
+  display: flex;
+}
+#About__me {
+  width: 50%;
+  font: "Domine";
+}
+
 .cardCommander {
-  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
 }
-
-.interestsCard {
+.cardCommander .experienceCard {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
-.interestsCard__list {
-  list-style-type: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.cardCommander .experienceCard h4 {
+  font-size: 1.25rem;
+}
+.cardCommander .experienceCard__1 {
+  border: 3px solid #9d649d;
+  border-radius: 0.5rem;
+  margin: 0.6rem;
+  padding: 0.3rem;
+}
+.cardCommander .experienceCard__2 {
+  border: 3px solid #9d649d;
+  border-radius: 0.5rem;
+  margin: 0.6rem;
+  padding: 0.3rem;
+}
+.cardCommander .experienceCard__3 {
+  border: 3px solid #9d649d;
+  border-radius: 0.5rem;
+  margin: 0.6rem;
+  padding: 0.3rem;
+}
+.cardCommander .interest-title {
+  padding: 1.25rem;
+}
+.cardCommander .interestsCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem;
+  width: 50%;
+}
+.cardCommander .interestsCard h4 {
+  font-size: 1.25rem;
+}
+.cardCommander .interestsCard__1 {
+  border: 3px solid #9d649d;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 0.6rem;
+}
+.cardCommander .interestsCard__2 {
+  border: 3px solid #9d649d;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 0.6rem;
+}
+.cardCommander .interestsCard__3 {
+  border: 3px solid #9d649d;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 0.6rem;
 }
 
-#get-in-touch {
-  font-size: 50px;
+.ending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.contact {
-  border-style: solid;
-  border-width: 2px;
-  border-color: whitesmoke;
-  border-radius: 5px;
-  padding: 5px;
+.ending__h1 {
+  font-size: 3rem;
+}
+.ending__contact {
+  border: 2px solid #9d649d;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  text-decoration: none;
 }
 
 footer {
   text-align: center;
-  padding: 50px;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 300px;
+  }
 }

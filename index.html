@@ -1,46 +1,123 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/4574b304b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="heading">
         <div class="heading__name">
-            <h1>LUCY <span style="color:blanchedalmond">GILHOOLY.</span></h1>
+            <h1>LUCY <span style="color:rgb(157, 100, 157)">GILHOOLY.</span></h1>
         </div>
         
         <div class="heading__links">
-        <a class="heading__links--nav" href="#"> About </a>
-        <a class="heading__links--nav"href="#"> Portfolio </a>
-        <a class="heading__links--nav" href="#"> Contact </a>
+        <a class="heading__links--nav" href="#About"> About </a>
+        <a class="heading__links--nav"href="#pf"> Portfolio </a>
+        <a class="heading__links--nav" href="mailto:lucy_johannah@hotmail.com"> Contact </a>
         </div>
       
     </header>
 
     <main>
-       <div id="opening">
-          <h1>Junior Software Developer.</h1>
-          <p> Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. Diam, elementum morbi pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque mollis tempor.</p>
-       </div>
-       
-       <div><h2 > PORTFOLIO ↴</h2></div>
-       <div class="Portfolio">
-          
-          <a href= # class="Portfolio__card">Project 1 <img src="images/images.jpg" alt="code image" ></a>
-          <a href= # class="Portfolio__card">Project 2 <img src="images/images.jpg" alt="code image" ></a>
-          <a href= # class="Portfolio__card">Project 3 <img src="images/images.jpg" alt="code image" ></a>
-          <a href= # class="Portfolio__card">Project 4 <img src="images/images.jpg" alt="code image"></a>
-          <a href= # class="Portfolio__card">Project 5 <img src="images/images.jpg" alt="code image"></a>
-          <a href= # class="Portfolio__card">Project 6 <img src="images/images.jpg" alt="code image" ></a>
+        <section class="start">
+            <div class="start__opening">
+                <h1>Junior Software Developer.</h1>
+            
+                <p> Hi there! I'm Lucy, a 23 year old Junior Software Developer based in Scotland. Take a look around my portfolio & feel free to get in touch if you are interested in working together!</p>
+            </div>
 
-       </div>
+            <div class="start__me" > 
+                <img class="start__me--img" src="./images/9BD0DE06-438E-425D-A652-9AC444478EBC_1_105_c.jpeg" alt="me">
+            </div>
+        </section>
+
+        <h1>SKILLS</h1>
+        <section class="skills">
+
+            <div class="skills__github">
+            <i class="fa-brands fa-github">GitHub</i>
+             </div>
+
+            <div class="skills__html5">
+            <i class="fa-brands fa-html5">HTML5</i>
+              </div>
+
+            <div class="skills__css3">
+             <i class="fa-brands fa-css3-alt">CSS3</i>
+             </div>
+
+            <div class="skills__JS">
+            <i class="fa-brands fa-square-js">JavaScript</i>
+             </div>
+
+            <div class="skills__scss">
+            <i class="fa-brands fa-sass">SCSS</i>
+             </div>
+
+            <div class="skills__bem">
+            <i class="fa-solid fa-code">BEM</i>
+             </div>
+
+            <div class="skills__react">
+            <i class="fa-brands fa-react">React</i>
+             </div>
+            <div class="skills__java">
+            <i class="fa-brands fa-java">Java</i>
+             </div>
+            <div class="skills__springboot">
+            <i class="fa-solid fa-leaf">Springboot</i>
+             </div>
+
+        </section>
+
+       <div><h2> PORTFOLIO ↴</h2></div>
+       <section class="Portfolio">
+          
+        <div class="Portfolio__card">
+             <a href= # class="Portfolio__card--1">PROJECT 1 </a>
+             <img id="Portfolio__card--1img" src="images/images.jpg" alt="code image" >
+             <button>React</button>
+             <button>SCSS</button>
+        </div>
+        <div class="Portfolio__card">
+             <a href= # class="Portfolio__card--2">PROJECT 2 </a>
+            <img id="Portfolio__card--2img"src="images/images.jpg" alt="code image" >
+            <button>React</button>
+            <button>SCSS</button>
+        </div>
+        <div class="Portfolio__card">
+             <a href= # class="Portfolio__card--3">PROJECT 3 </a>
+            <img id="Portfolio__card--3img"src="images/images.jpg" alt="code image" > 
+            <button>React</button>
+            <button>SCSS</button>
+        </div>
+        <div class="Portfolio__card">
+             <a href= # class="Portfolio__card--4">PROJECT 4 </a>
+            <img id="Portfolio__card--4img"src="images/images.jpg" alt="code image">
+            <button>React</button>
+            <button>SCSS</button>
+        </div>
+        <div class="Portfolio__card">
+             <a href= # class="Portfolio__card--5">PROJECT 5 </a>
+            <img id="Portfolio__card--5img" src="images/images.jpg" alt="code image">
+            <button>React</button>
+            <button>SCSS</button>
+        </div>
+        <div class="Portfolio__card">
+             <a href= # class="Portfolio__card--6">PROJECT 6 </a>
+             <img id="Portfolio__card--6img"src="images/images.jpg" alt="code image" >
+             <button>React</button>
+             <button>SCSS</button>
+        </div>
+       </section>
         
-       <div><h3>ABOUT</h3></div>
-       
-        <section class="About">
+       <section id="About">
+       <div><h3 class="About__title">ABOUT</h3></div>
+        
          
             <div class="About__me">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet placerat nunc vel efficitur. Etiam cursus nulla ut enim iaculis, eu tristique nulla rutrum. Donec dapibus lacus dui, eget tincidunt massa posuere at. Ut nisi mi, congue a tristique vitae, blandit quis massa. Phasellus augue est, consectetur sit amet nisl ac, consectetur aliquam dui. Nullam euismod viverra lobortis. Praesent vitae elit in nunc blandit maximus at eget urna. Vivamus suscipit augue neque, et pellentesque erat malesuada sit amet. Integer convallis, massa eu tristique feugiat, felis urna posuere orci, vel blandit felis velit et magna. Sed mattis justo eget turpis venenatis tristique.
@@ -48,61 +125,60 @@
 
                 </p>
             </div>
-
-            <div class="About__image">
-            <img src="./images/istockphoto-1279104620-612x612.jpg" alt="smiley face">
-            </div>
-       </section>
-
-       <section class="experienceCard">
-
-            <h4> Experience </h4>
-         <div class="experienceCard__1">
-            <h5> Trainee Software Developer @ Nology</h5>
-            <p>Aug - Nov 2022</p>
-          <ul>
-              <li>Sed condimentum vitae sed sit congue massa tortor volupat nascetur.</li>
-              <li>Felis vellit, pretium tristique elementum neque, congueelit integer. Et tortor imperdiet aenaen nulla pulvinar mauris mattis.</li>
-          </ul>
-        </div>
-
-       <div class="experienceCard__2">
-          <h5>Covid Tester @ Stefs Star Nurses</h5>
-        </div>
-
-        <div class="experienceCard__3">
-          <h5>Sales Associate @ Dr Martens </h5>
-        </div>
-
+        </section>
        </section>
 
        <section class="cardCommander">
+        <section class="experienceCard">
+
+                <h4> EXPERIENCE </h4>
+            <section class="experienceCard__1">
+                <a> Trainee Software Developer @ Nology</a>
+                <p>Aug - Nov 2022</p>
+            <ul>
+                <li>Sed condimentum vitae sed sit congue massa tortor volupat nascetur.</li>
+                <li>Felis vellit, pretium tristique elementum neque, congueelit integer. Et tortor imperdiet aenaen nulla pulvinar mauris mattis.</li>
+            </ul>
+            </section>
+
+            <div class="experienceCard__2">
+                <h5>Covid Tester @ Stefs Star Nurses</h5>
+            </div>
+
+            <div class="experienceCard__3">
+                <h5>Sales Associate @ Dr Martens </h5>
+            </div>
+
+       </section>
 
             <div class="interestsCard">
 
-                <h4 >Interests </h4>
+                <h4>INTERESTS </h4>
 
-                <ul class="interestsCard__list">
-                    <li>Gym</li>
-                    <li>Cooking</li>
-                    <li>Skiing</li>
-                </ul>
+                    <a id="interestsCard__1">Cooking</a>
+                    <a id="interestsCard__2">Gym</a>
+                    <a id="interestsCard__3">Skiing</a>
+            
 
             </div>
 
-      </section>
+            </section>
 
-        <section>
-            <h1 id="get-in-touch">Get in Touch</h1>
-            <button class="contact"> contact </button> 
+    
+
+        <section class="ending">
+            <h1 class="ending__h1">Get in Touch</h1>
+            <a class="ending__contact" href="mailto:lucy_johannah@hotmail.com"> CONTACT </a> 
         </section>
     </main>
 
     <footer>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">CV</a>
+        <i href="#" class="fa-brands fa-linkedin"></i>
+        <i href="#" class="fa-brands fa-square-github"></i>
+        <i href="#" class="fa-solid fa-file-magnifying-glass"></i>
     </footer>
+
+  
 
 </body>
 </html>

@@ -1,128 +1,268 @@
-$primaryColor: whitesmoke;
-$secondaryColor:rgb(67, 60,60);
-$tertiaryColor: blanchedalmond;
-$mainFont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 
+$primaryColor: rgb(43, 43, 149);
+$secondaryColor: whitesmoke;
+$tertiaryColor: rgb(157, 100, 157);
+$mainFont: 'Abril Fatface';
+$secondaryFont: 'Domine';
 
 * {
-    background-color:$secondaryColor;
+    background-color: rgb(175, 175, 233);
     color: $primaryColor;
     font-family:$mainFont;
 }
 
 .heading {
-font-size: 20px;
 width: 100%;
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 
     &__name {
     justify-content: flex-start;
+    font-size: 30px;
+    align-items: center;
 }
     
     &__links{
     justify-content:flex-end;
+    align-items: center;
+    margin-top: 1.8rem;
     width: 35%;
+    font-size: 1.5rem;
     
     &--nav {
-    padding: 20px;
+    padding: 1.25rem;
     text-decoration:none;
        }
     
     a:hover {
     color:$secondaryColor;
     background-color:$tertiaryColor;
+    border-radius: 1.5rem;
        }
 
     }
 }
+   .start{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+        &__opening {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1rem;
+            width: 50%;
+            font-size: 1.25rem;
 
 
+             &__p {
+                max-width: 50%;
+                font: $secondaryFont;
+           
+        }
+        }
 
-#opening {
-    padding-bottom: 30px;
-   &__p {
-      max-width: 50%;
- }
-}
+        &__me {
 
+            &--img {
+                max-width: 40vw;
+                border-radius: 1.25rem;
+            }
+        
+        }
+   }
+
+
+   .skills {
+    display: flex;
+    justify-content: space-around;
+   }
 
 .Portfolio {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 50px;
-    background-color: $tertiaryColor;
-    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding:1.25rem;
+    flex-wrap: wrap;
+    margin: 3rem;
+
+    button {
+        border-radius: 1.25rem;
+    }
+
+    button:active {
+        background-color: $tertiaryColor;
+        color:$secondaryColor;
+    }
+   
 
   &__card {
-    border-style: solid;
-    border-color: $primaryColor;
-    border-width: 2px;
-    padding: 5px;
-    text-align: center;
+    border: 2px solid $tertiaryColor;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.25rem;
+    box-shadow: 5px 10px $tertiaryColor;
+    font-weight: bold;
+
+    
+
+  //  &--1{
+
+  //  }
+
+  //  &--2{
+
+  //  }
+
+  //  &--3{
+
+   // }
+
+  //  &--4{
+
+   // }
+
+  //  &--5{
+
+  //  }
+
+  //  &--6{
+
+  //  }
  }
 }
 
-.About{
+#About{
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
-    
-    &__me {
-       
-}
+    align-items: center;
 
-    &__image {
-        width: 50px;
+         &__title {
+        display: flex;
+             }
+
+         &__me {
+        width: 50%;
+        font: $secondaryFont;
+             }
  
   }
-}
 
 
 
-.experienceCard {
-    border-style: solid;
-    border-color: red;
-    border-width: 2px;
+.cardCommander {
+    display: flex;
+    justify-content: space-between;
 
-    &__1{
+   
+        .experienceCard {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
 
-    }
-    &__2{
+        h4 {
+            font-size: 1.25rem;
+        }
 
-    }
-    &__3{
+            &__1{
+                border: 3px solid $tertiaryColor;
+                border-radius: 0.5rem;
+                margin: 0.6rem;
+                padding: 0.3rem;
 
-    }
-}
+            }
+            &__2{
+                border: 3px solid $tertiaryColor;
+                border-radius: 0.5rem;
+                margin: 0.6rem;
+                padding: 0.3rem;
+            }
+            &__3{
+                border: 3px solid $tertiaryColor;
+                border-radius: 0.5rem;
+                margin: 0.6rem;
+                padding: 0.3rem;
 
-.cardCommander{
-    border: 2px solid red;
-}
-.interestsCard{
-    width: 50%;
+            }
+        }
+
+        .interest-title {
+            padding: 1.25rem;
+        }
+
+
+        .interestsCard{
+            display: flex;
+            flex-direction: column;
+            margin:0.6rem;
+            width: 50%;
+            
+            
+            h4{
+                font-size: 1.25rem;
+            }
+        
     
- 
-    &__list{
-    list-style-type: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-}
+        
+            &__1 {
+                    border: 3px solid $tertiaryColor;
+                    border-radius: 0.5rem;
+                    padding: 1.25rem;
+                    margin: 0.6rem;
+                    
+                    
+
+            }
+            &__2 {
+                    border: 3px solid $tertiaryColor;
+                    border-radius: 0.5rem;
+                    padding: 1.25rem;
+                    margin: 0.6rem;
+                    
+            }
+            &__3 {
+                    border: 3px solid $tertiaryColor;
+                    border-radius: 0.5rem;
+                    padding: 1.25rem;
+                    margin: 0.6rem;
+                    
+            }
+        }
+
+        }
 
 
-#get-in-touch {
-    font-size: 50px;
-}
-.contact{
-    border-style: solid;
-    border-width: 2px;
-    border-color: $primaryColor;
-    border-radius: 5px;
-    padding: 5px;
+
+.ending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__h1 {
+        font-size: 3rem;
+    }
+    &__contact{
+        border: 2px solid $tertiaryColor;
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+        text-decoration: none;
+    }
 }
 
 footer {
     text-align: center;
-    padding: 50px;
+    padding: 3rem;
+}
+@media screen and (max-width: 768px) {
+    main{
+        width:300px;
+    }
+    
 }
 
