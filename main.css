@@ -1,39 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
 * {
-  background-color: #afafe9;
+  background-color: #d6d6f9;
   color: #2b2b95;
-  font-family: "Abril Fatface";
+  font-family: "Domine";
 }
 
-.heading {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media screen and (min-width: 992px) {
+  .heading {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .heading__name {
+    justify-content: flex-end;
+    font-size: 30px;
+    align-items: center;
+  }
+  .heading__links {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.8rem;
+    width: 35%;
+    font-size: 1.5rem;
+  }
+  .heading__links--nav {
+    padding: 1.25rem;
+    text-decoration: none;
+  }
+  .heading__links a:hover {
+    color: whitesmoke;
+    background-color: #9d649d;
+    border-radius: 1.5rem;
+  }
 }
-.heading__name {
-  justify-content: flex-start;
-  font-size: 30px;
-  align-items: center;
-}
-.heading__links {
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 1.8rem;
-  width: 35%;
-  font-size: 1.5rem;
-}
-.heading__links--nav {
-  padding: 1.25rem;
-  text-decoration: none;
-}
-.heading__links a:hover {
-  color: whitesmoke;
-  background-color: #9d649d;
-  border-radius: 1.5rem;
-}
-
 .start {
   display: flex;
   justify-content: space-around;
@@ -52,12 +53,18 @@
 }
 .start__me--img {
   max-width: 40vw;
+  max-height: 50vh;
   border-radius: 1.25rem;
 }
 
 .skills {
   display: flex;
   justify-content: space-around;
+  height: 3rem;
+  font-size: 3rem;
+}
+.skills__heading {
+  font-size: 1.6rem;
 }
 
 .Portfolio {
@@ -182,8 +189,37 @@ footer {
   padding: 3rem;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    width: 300px;
+@media screen and (min-width: 992px) {
+  .header {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .start {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cardCommander {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
   }
 }
