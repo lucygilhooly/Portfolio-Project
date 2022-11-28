@@ -92,29 +92,38 @@
   box-shadow: 5px 10px #9d649d;
   font-weight: bold;
 }
+.Portfolio__card--img {
+  width: 250px;
+  height: 200px;
+}
 
 #About {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 60%;
+  margin-left: 300px;
 }
 #About__title {
   display: flex;
 }
 #About__me {
-  width: 50%;
   font: "Domine";
 }
 
 .cardCommander {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 200px;
 }
 .cardCommander .experienceCard {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 .cardCommander .experienceCard h4 {
   font-size: 1.25rem;
@@ -136,36 +145,6 @@
   border-radius: 0.5rem;
   margin: 0.6rem;
   padding: 0.3rem;
-}
-.cardCommander .interest-title {
-  padding: 1.25rem;
-}
-.cardCommander .interestsCard {
-  display: flex;
-  flex-direction: column;
-  margin: 0.6rem;
-  width: 50%;
-}
-.cardCommander .interestsCard h4 {
-  font-size: 1.25rem;
-}
-.cardCommander .interestsCard__1 {
-  border: 3px solid #9d649d;
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  margin: 0.6rem;
-}
-.cardCommander .interestsCard__2 {
-  border: 3px solid #9d649d;
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  margin: 0.6rem;
-}
-.cardCommander .interestsCard__3 {
-  border: 3px solid #9d649d;
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  margin: 0.6rem;
 }
 
 .ending {

@@ -117,21 +117,29 @@ justify-content: space-between;
     margin: 1.25rem;
     box-shadow: 5px 10px $tertiaryColor;
     font-weight: bold;
+
+    &--img{
+        width: 250px;
+        height: 200px;
+    }
  }
 }
 
 #About{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 60%;
+    margin-left: 300px;
+
 
          &__title {
         display: flex;
              }
 
          &__me {
-        width: 50%;
+
         font: $secondaryFont;
              }
  
@@ -141,13 +149,18 @@ justify-content: space-between;
 
 .cardCommander {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 200px;
 
    
         .experienceCard {
         display: flex;
         flex-direction: column;
-        width: 50%;
+
+        width: 100%;
 
         h4 {
             font-size: 1.25rem;
@@ -175,48 +188,48 @@ justify-content: space-between;
             }
         }
 
-        .interest-title {
-            padding: 1.25rem;
-        }
+        // .interest-title {
+        //     padding: 1.25rem;
+        // }
 
 
-        .interestsCard{
-            display: flex;
-            flex-direction: column;
-            margin:0.6rem;
-            width: 50%;
+        // .interestsCard{
+        //     display: flex;
+        //     flex-direction: column;
+        //     margin:0.6rem;
+        //     width: 50%;
             
             
-            h4{
-                font-size: 1.25rem;
-            }
+        //     h4{
+        //         font-size: 1.25rem;
+        //     }
         
     
         
-            &__1 {
-                    border: 3px solid $tertiaryColor;
-                    border-radius: 0.5rem;
-                    padding: 1.25rem;
-                    margin: 0.6rem;
+        //     &__1 {
+        //             border: 3px solid $tertiaryColor;
+        //             border-radius: 0.5rem;
+        //             padding: 1.25rem;
+        //             margin: 0.6rem;
                     
                     
 
-            }
-            &__2 {
-                    border: 3px solid $tertiaryColor;
-                    border-radius: 0.5rem;
-                    padding: 1.25rem;
-                    margin: 0.6rem;
+        //     }
+        //     &__2 {
+        //             border: 3px solid $tertiaryColor;
+        //             border-radius: 0.5rem;
+        //             padding: 1.25rem;
+        //             margin: 0.6rem;
                     
-            }
-            &__3 {
-                    border: 3px solid $tertiaryColor;
-                    border-radius: 0.5rem;
-                    padding: 1.25rem;
-                    margin: 0.6rem;
+        //     }
+        //     &__3 {
+        //             border: 3px solid $tertiaryColor;
+        //             border-radius: 0.5rem;
+        //             padding: 1.25rem;
+        //             margin: 0.6rem;
                     
-            }
-        }
+        //     }
+        // }
 
         }
 
